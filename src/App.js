@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEdit } from "@fortawesome/pro-regular-svg-icons";
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <FontAwesomeIcon icon={faEdit} className="edit" />
         <a
           className="App-link"
           href="https://reactjs.org"

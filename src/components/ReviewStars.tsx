@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./ReviewStars.module.css";
 import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";

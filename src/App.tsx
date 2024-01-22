@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import CompanyList from "./components/CompanyList";
 import TradeTiles from "./components/TradeTiles";
 

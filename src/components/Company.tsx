@@ -1,5 +1,5 @@
 import styles from "./Company.module.css";
-import { useContext, useState, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { ReviewsContext } from "../context/reviews";
 import Review from "./Review";
 import ReviewStars from "./ReviewStars";

@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./Review.module.css";
 import ReviewStars from "./ReviewStars";
 

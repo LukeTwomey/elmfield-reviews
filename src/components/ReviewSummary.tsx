@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./ReviewSummary.module.css";
 import { FaCaretUp, FaCaretDown } from "react-icons/fa";
 

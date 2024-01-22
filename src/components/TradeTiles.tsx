@@ -1,10 +1,11 @@
+import React from "react";
 import styles from "./TradeTiles.module.css";
 import TradeTile from "./TradeTile";
 import {
   MdPlumbing,
   MdOutlineElectricalServices,
   MdRoofing,
-  MdConstruction
+  MdConstruction,
 } from "react-icons/md";
 import { GiGardeningShears, GiKeyLock, GiVacuumCleaner } from "react-icons/gi";
 import { RiPaintBrushFill } from "react-icons/ri";

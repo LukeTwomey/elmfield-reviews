@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./TradeTile.module.css";
 import { FaBeer } from "react-icons/fa";
 

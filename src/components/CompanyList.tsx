@@ -1,4 +1,4 @@
-import react, { useContext } from "react";
+import React, { useContext } from "react";
 import { CompaniesContext } from "../context/companies";
 import Company from "./Company";
 

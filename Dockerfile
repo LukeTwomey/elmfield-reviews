@@ -5,4 +5,4 @@ RUN yarn
 RUN yarn build
 
 FROM nginx:latest
-COPY --from=build ./dist /usr/share/nginx/html/
+COPY --from=build ./dist /usr/share/nginx/html

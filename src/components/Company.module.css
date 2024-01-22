@@ -1,7 +1,8 @@
 .company {
   border: 1px solid white;
-  margin-bottom: 1em;
   border-radius: 5px;
+  margin-bottom: 1em;
+  padding: 1em;
 }
 
 .top {
@@ -17,25 +18,9 @@
 
 .name {
   font-weight: 700;
-  padding: 1em 1em 0 1em;
 }
 
 .rating {
   display: flex;
   flex-direction: column;
-}
-
-.number {
-  color: white;
-  font-size: 0.9em;
-}
-
-.phone {
-  margin-top: 0.1em;
-  padding: 0 0 1em 1em;
-}
-
-.phoneIcon {
-  display: inline;
-  margin-right: 0.5em;
 }

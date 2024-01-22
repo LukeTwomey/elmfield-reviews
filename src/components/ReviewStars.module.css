@@ -1,12 +1,12 @@
-@value review from "./Review.module.css";
+/* @value review from "./Review.module.css"; */
 
-.stars {
+/* .stars {
   padding: 0 1em 0 1em;
-}
+} */
 
-.review .stars {
+/* .review .stars {
   padding-right: 0;
-}
+} */
 
 .star {
   color: #e2b027;

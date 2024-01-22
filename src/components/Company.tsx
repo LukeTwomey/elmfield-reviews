@@ -1,10 +1,10 @@
 import styles from "./Company.module.css";
 import React, { useContext, useState, useEffect } from "react";
 import { ReviewsContext } from "../context/reviews";
+import PhoneNumber from "./PhoneNumber";
 import Review from "./Review";
 import ReviewStars from "./ReviewStars";
 import ReviewSummary from "./ReviewSummary";
-import { FaPhoneAlt } from "react-icons/fa";
 
 const Company = ({ company }) => {
   const reviews = useContext(ReviewsContext);
@@ -17,9 +17,6 @@ const Company = ({ company }) => {
   });
 
   const renderedReviews = filteredReviews?.map((review) => {
-    console.log("Review: ");
-    console.log(review);
-
     return <Review review={review} key={review.id} />;
   });
 
@@ -40,27 +37,16 @@ const Company = ({ company }) => {
     setNoOfReviews(count);
   }, []);
 
-  const onLinkClick = (e) => {
-    e.preventDefault();
-  };
-
   return (
     <>
       <div className={styles.company}>
         <div className={styles.top}>
           <div className={styles.details}>
             <div className={styles.name}>{company.name}</div>
-            <div className={styles.phone}>
-              <a href="tel" className={styles.number} onClick={onLinkClick}>
-                <div className={styles.phoneIcon}>
-                  <FaPhoneAlt />
-                </div>{" "}
-                {company.phone}
-              </a>
-            </div>
+            <PhoneNumber number={company.phone} />
           </div>
           <div className={styles.rating}>
-            <ReviewStars rating={rating} />
+            <ReviewStars rating={rating} toggleReviews={toggleReviews} />
             <ReviewSummary
               noOfReviews={noOfReviews}
               rating={rating}

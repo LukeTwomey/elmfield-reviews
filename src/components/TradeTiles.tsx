@@ -37,12 +37,15 @@ const TradeTiles = ({ handleClick, selectedTrade }) => {
         clickHandler={handleClick}
         selectedTrade={selectedTrade}
       />
-      <TradeTile
+      {/* <TradeTile
         trade="Gardener"
         icon={<GiGardeningShears />}
         clickHandler={handleClick}
         selectedTrade={selectedTrade}
       />
+      
+      // ADD CHIMNEY SWEEP AS WELL
+
       <TradeTile
         trade="Painter"
         icon={<RiPaintBrushFill />}
@@ -60,7 +63,7 @@ const TradeTiles = ({ handleClick, selectedTrade }) => {
         icon={<GiVacuumCleaner />}
         clickHandler={handleClick}
         selectedTrade={selectedTrade}
-      />
+      /> */}
     </div>
   );
 };

@@ -1,13 +1,16 @@
 .phone {
-  margin-top: 0.1em;
+  margin-top: 0.3em;
 }
 
 .phoneIcon {
+  color: #8c5d2e;
+  font-size: 1.3em;
   display: inline;
   margin-right: 0.5em;
 }
 
 .number {
   color: white;
+  display: flex;
   font-size: 0.9em;
 }

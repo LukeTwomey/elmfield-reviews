@@ -2,9 +2,9 @@
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   font-size: 0.75em;
-  /* padding-right: 1em; */
+  margin-top: 0.3em;
   text-align: right;
 }
 
@@ -14,7 +14,7 @@
 
 .caret {
   cursor: pointer;
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 .caret svg {

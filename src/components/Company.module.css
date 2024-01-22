@@ -1,8 +1,8 @@
 .company {
-  border: 1px solid white;
-  border-radius: 10px;
+  border: 2px solid #575555;
+  border-radius: 30px;
   margin-bottom: 1em;
-  padding: 1em;
+  padding: 0.75em 1.5em;
 }
 
 .top {
@@ -23,4 +23,8 @@
 .rating {
   display: flex;
   flex-direction: column;
+}
+
+.reviews {
+  margin-bottom: 0.75em;
 }

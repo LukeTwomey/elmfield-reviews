@@ -9,7 +9,7 @@ const PhoneNumber = ({ number }) => {
         <div className={styles.phoneIcon}>
           <FaPhoneAlt />
         </div>{" "}
-        {number}
+        <div>{number}</div>
       </a>
     </div>
   );

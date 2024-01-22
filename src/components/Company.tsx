@@ -55,7 +55,10 @@ const Company = ({ company }) => {
             />
           </div>
         </div>
-        {showReviews ? renderedReviews : null}
+
+        {showReviews ? (
+          <div className={styles.reviews}>{renderedReviews}</div>
+        ) : null}
       </div>
     </>
   );

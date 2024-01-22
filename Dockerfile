@@ -3,5 +3,4 @@ COPY package.json index.html ./
 COPY ./src /src
 RUN yarn
 RUN yarn build
-COPY --chown=node ./dist ./
 ENTRYPOINT ["./dist/index.html"]

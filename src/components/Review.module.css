@@ -1,0 +1,15 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  margin: 0 1em 1em;
+}
+
+.author {
+  font-weight: 700;
+}

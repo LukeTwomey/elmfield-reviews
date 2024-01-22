@@ -1,0 +1,21 @@
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: grey;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding: 0.2em;
+  text-align: center;
+}
+
+.icon svg {
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin-right: 0.5em;
+}
+
+.selected {
+  border: 2px solid white;
+}

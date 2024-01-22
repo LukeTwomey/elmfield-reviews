@@ -1,0 +1,22 @@
+.summary {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.75em;
+  padding-right: 1em;
+  text-align: right;
+}
+
+.text {
+  margin-right: 0.5em;
+}
+
+.caret {
+  cursor: pointer;
+  font-size: 1.8em;
+}
+
+.caret svg {
+  display: block;
+}

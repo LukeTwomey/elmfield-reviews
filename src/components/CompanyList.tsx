@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { CompaniesContext } from "../context/companies";
 import Company from "./Company";
+import styles from "./CompanyList.module.css";
 
 const CompanyList = ({ selectedTrade }) => {
   const companies = useContext(CompaniesContext);
@@ -13,7 +14,7 @@ const CompanyList = ({ selectedTrade }) => {
     return <Company company={company} key={company.id} />;
   });
 
-  return <div>{renderedCompanies}</div>;
+  return <div className={styles.companyList}>{renderedCompanies}</div>;
 };
 
 export default CompanyList;

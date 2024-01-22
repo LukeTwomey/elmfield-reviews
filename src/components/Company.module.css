@@ -28,3 +28,9 @@
 .reviews {
   margin-bottom: 0.75em;
 }
+
+@media screen and (min-width: 700px) {
+  .company {
+    margin-bottom: 0;
+  }
+}

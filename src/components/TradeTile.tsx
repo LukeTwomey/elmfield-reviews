@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import styles from "./TradeTile.module.css";
 import { FaBeer } from "react-icons/fa";
+import styles from "./TradeTile.module.css";
 
-const TradeTile = ({ trade, icon, clickHandler, selectedTrade }) => {
+const TradeTile = ({ trade, icon, onClick, selectedTrade }) => {
   const [selected, setSelected] = useState(false);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const TradeTile = ({ trade, icon, clickHandler, selectedTrade }) => {
   return (
     <div
       className={`${styles.tile} ${selected ? styles.selected : null}`}
-      onClick={() => clickHandler(trade)}
+      onClick={() => onClick(trade)}
     >
       <div className={styles.icon}>{icon}</div> {trade}
     </div>

@@ -1,30 +1,9 @@
-# React + TypeScript + Vite
+# Elmfield Reviews
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This app was created to aid the residents of Elmfield Road in their search for reliable tradespeople.
 
-Currently, two official plugins are available:
+In the same manner as tools like Checkatrade, or Trustatrader, this app intends to collate the contact details for reputable companies, displaying reviews from the residents who have used them in the past.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+People will often ask for recommendations in the street whatsapp group, showing there is an appetite for more personal, localised recommendations from friends and neighbours, aside from the bigger sites mentioned above.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+The client is written in React. The back-end consists of an API written in Node and a PostGresDB to hold the company and review data. Both are deployed to Railway.

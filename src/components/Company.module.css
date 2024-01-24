@@ -4,33 +4,3 @@
   margin-bottom: 1em;
   padding: 0.75em 1.5em;
 }
-
-.top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.details {
-  display: flex;
-  flex-direction: column;
-}
-
-.name {
-  font-weight: 700;
-}
-
-.rating {
-  display: flex;
-  flex-direction: column;
-}
-
-.reviews {
-  margin-bottom: 0.75em;
-}
-
-@media screen and (min-width: 700px) {
-  .company {
-    margin-bottom: 0;
-  }
-}

@@ -1,10 +1,8 @@
 import styles from "./Company.module.css";
 import React, { useContext, useState, useEffect } from "react";
 import { ReviewsContext } from "../context/reviews";
-import PhoneNumber from "./PhoneNumber";
-import Review from "./Review";
-import ReviewStars from "./ReviewStars";
-import ReviewSummary from "./ReviewSummary";
+import CompanySummary from "./CompanySummary";
+import Reviews from "./Reviews";
 
 const Company = ({ company }) => {
   const reviews = useContext(ReviewsContext);
@@ -12,17 +10,13 @@ const Company = ({ company }) => {
   const [noOfReviews, setNoOfReviews] = useState(0);
   const [showReviews, setShowReviews] = useState(false);
 
-  const filteredReviews = reviews?.filter((review) => {
-    return review.company === company.id;
-  });
-
-  const renderedReviews = filteredReviews?.map((review) => {
-    return <Review review={review} key={review.id} />;
-  });
-
   const toggleReviews = () => {
     setShowReviews(!showReviews);
   };
+
+  const filteredReviews = reviews?.filter((review) => {
+    return review.company === company.id;
+  });
 
   useEffect(() => {
     let totalRating = 0;
@@ -38,29 +32,16 @@ const Company = ({ company }) => {
   }, []);
 
   return (
-    <>
-      <div className={styles.company}>
-        <div className={styles.top}>
-          <div className={styles.details}>
-            <div className={styles.name}>{company.name}</div>
-            <PhoneNumber number={company.phone} />
-          </div>
-          <div className={styles.rating}>
-            <ReviewStars rating={rating} toggleReviews={toggleReviews} />
-            <ReviewSummary
-              noOfReviews={noOfReviews}
-              rating={rating}
-              showReviews={showReviews}
-              toggleReviews={toggleReviews}
-            />
-          </div>
-        </div>
-
-        {showReviews ? (
-          <div className={styles.reviews}>{renderedReviews}</div>
-        ) : null}
-      </div>
-    </>
+    <div className={styles.company}>
+      <CompanySummary
+        company={company}
+        toggleReviews={toggleReviews}
+        rating={rating}
+        noOfReviews={noOfReviews}
+        showReviews={showReviews}
+      />
+      <Reviews showReviews={showReviews} reviews={filteredReviews} />
+    </div>
   );
 };
 

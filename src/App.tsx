@@ -1,13 +1,12 @@
-import "./App.css";
 import React, { useState } from "react";
-import CompanyList from "./components/CompanyList";
 import TradeTiles from "./components/TradeTiles";
+import CompanyList from "./components/CompanyList";
 
 function App() {
-  const [selectedTrade, setTrade] = useState();
+  const [selectedTrade, setSelectedTrade] = useState();
 
-  const handleClick = (trade) => {
-    setTrade(trade);
+  const selectTrade = (trade) => {
+    setSelectedTrade(trade);
   };
 
   return (
@@ -18,7 +17,7 @@ function App() {
           Choose a trade to view recommendations from Elmfield Road residents
         </h2>
       </div>
-      <TradeTiles handleClick={handleClick} selectedTrade={selectedTrade} />
+      <TradeTiles onClick={selectTrade} selectedTrade={selectedTrade} />
       <CompanyList selectedTrade={selectedTrade} />
     </>
   );

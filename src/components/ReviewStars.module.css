@@ -1,3 +1,7 @@
+.stars {
+  cursor: pointer;
+}
+
 .star {
   color: #918051;
 }

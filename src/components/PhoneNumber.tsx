@@ -8,7 +8,7 @@ const PhoneNumber = ({ number }) => {
       <a href={`tel:${number}`} className={styles.number}>
         <div className={styles.phoneIcon}>
           <FaPhoneAlt />
-        </div>{" "}
+        </div>
         <div>{number}</div>
       </a>
     </div>

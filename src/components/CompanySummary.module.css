@@ -1,7 +1,7 @@
 .summary {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .details {
@@ -11,9 +11,11 @@
 
 .name {
   font-weight: 700;
+  max-width: 200px;
 }
 
 .rating {
   display: flex;
   flex-direction: column;
+  min-width: 80px;
 }

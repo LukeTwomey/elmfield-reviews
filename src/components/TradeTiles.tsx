@@ -29,6 +29,7 @@ const TradeTiles = ({ onClick, selectedTrade }) => {
         icon={trade.icon}
         onClick={onClick}
         selectedTrade={selectedTrade}
+        key={trade.trade}
       />
     );
   });

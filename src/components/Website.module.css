@@ -1,0 +1,20 @@
+.website {
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 1em;
+  margin-top: 0.3em;
+}
+
+.icon {
+  color: #8c5d2e;
+  font-size: 1.4em;
+  display: inline;
+  margin-right: 9px;
+}
+
+.link {
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}

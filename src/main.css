@@ -36,3 +36,9 @@ h2 {
 a {
   text-decoration: none;
 }
+
+@media screen and (min-width: 700px) {
+  :root {
+    font-size: 1.2em;
+  }
+}

@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 0.7em;
+  font-size: 0.8em;
   margin-bottom: 1em;
   padding: 1em;
 }

@@ -6,6 +6,7 @@ import {
   MdOutlineElectricalServices,
   MdRoofing,
   MdConstruction,
+  MdOutlineWindow,
 } from "react-icons/md";
 import {
   GiGardeningShears,
@@ -23,9 +24,10 @@ const TradeTiles = ({ onClick, selectedTrade }) => {
     // { trade: "Electrician", icon: <MdOutlineElectricalServices /> },
     // { trade: "Gardener", icon: <GiGardeningShears /> },
     // { trade: "Locksmith", icon: <GiKeyLock /> },
-    // { trade: "Plumber", icon: <MdPlumbing /> },
+    { trade: "Plumber", icon: <MdPlumbing /> },
     { trade: "Roofer", icon: <MdRoofing /> },
     { trade: "Painter", icon: <RiPaintBrushFill /> },
+    { trade: "Window Fitters", icon: <MdOutlineWindow /> },
   ];
 
   const renderTiles = trades.map((trade) => {

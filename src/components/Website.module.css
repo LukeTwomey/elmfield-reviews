@@ -18,3 +18,8 @@
   align-items: center;
   text-decoration: none;
 }
+
+.external {
+  margin-left: 5px;
+  font-size: 0.9em;
+}

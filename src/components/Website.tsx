@@ -1,5 +1,6 @@
 import React from "react";
 import { TbWorldWww } from "react-icons/tb";
+import { HiOutlineExternalLink } from "react-icons/hi";
 import styles from "./Website.module.css";
 
 const Website = ({ website }) => {
@@ -10,6 +11,7 @@ const Website = ({ website }) => {
           <TbWorldWww />
         </div>
         {website}
+        <HiOutlineExternalLink className={styles.external} />
       </a>
     </div>
   ) : null;

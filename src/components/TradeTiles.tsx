@@ -21,7 +21,7 @@ const TradeTiles = ({ onClick, selectedTrade }) => {
     { trade: "Builder", icon: <MdConstruction /> },
     { trade: "Carpenter", icon: <GiHandSaw /> },
     // { trade: "Cleaner", icon: <GiVacuumCleaner /> },
-    // { trade: "Electrician", icon: <MdOutlineElectricalServices /> },
+    { trade: "Electrician", icon: <MdOutlineElectricalServices /> },
     // { trade: "Gardener", icon: <GiGardeningShears /> },
     // { trade: "Locksmith", icon: <GiKeyLock /> },
     { trade: "Plumber", icon: <MdPlumbing /> },

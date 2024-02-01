@@ -8,25 +8,22 @@ import {
   MdConstruction,
   MdOutlineWindow,
 } from "react-icons/md";
-import {
-  GiGardeningShears,
-  GiKeyLock,
-  GiVacuumCleaner,
-  GiHandSaw,
-} from "react-icons/gi";
+import { GiHandSaw, GiSkeleton } from "react-icons/gi";
 import { RiPaintBrushFill } from "react-icons/ri";
+import { RxScissors } from "react-icons/rx";
+import { LuHardHat } from "react-icons/lu";
 
 const TradeTiles = ({ onClick, selectedTrade }) => {
   const trades = [
-    { trade: "Builder", icon: <MdConstruction /> },
+    { trade: "Builder", icon: <LuHardHat /> },
     { trade: "Carpenter", icon: <GiHandSaw /> },
-    // { trade: "Cleaner", icon: <GiVacuumCleaner /> },
+    { trade: "Chiropractor", icon: <GiSkeleton /> },
     { trade: "Electrician", icon: <MdOutlineElectricalServices /> },
-    // { trade: "Gardener", icon: <GiGardeningShears /> },
-    // { trade: "Locksmith", icon: <GiKeyLock /> },
+    { trade: "Hairdresser", icon: <RxScissors /> },
+    { trade: "Handyman", icon: <MdConstruction /> },
+    { trade: "Painter", icon: <RiPaintBrushFill /> },
     { trade: "Plumber", icon: <MdPlumbing /> },
     { trade: "Roofer", icon: <MdRoofing /> },
-    { trade: "Painter", icon: <RiPaintBrushFill /> },
     { trade: "Window Fitters", icon: <MdOutlineWindow /> },
   ];
 

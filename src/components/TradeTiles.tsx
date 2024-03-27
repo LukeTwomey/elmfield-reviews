@@ -8,7 +8,12 @@ import {
   MdConstruction,
   MdOutlineWindow,
 } from "react-icons/md";
-import { GiHandSaw, GiSkeleton, GiGardeningShears } from "react-icons/gi";
+import {
+  GiHandSaw,
+  GiSkeleton,
+  GiGardeningShears,
+  GiKeyLock,
+} from "react-icons/gi";
 import { RiPaintBrushFill } from "react-icons/ri";
 import { RxScissors } from "react-icons/rx";
 import { LuHardHat } from "react-icons/lu";
@@ -22,6 +27,7 @@ const TradeTiles = ({ onClick, selectedTrade }) => {
     { trade: "Gardener", icon: <GiGardeningShears /> },
     { trade: "Hairdresser", icon: <RxScissors /> },
     { trade: "Handyman", icon: <MdConstruction /> },
+    { trade: "Locksmith", icon: <GiKeyLock /> },
     { trade: "Painter", icon: <RiPaintBrushFill /> },
     { trade: "Plumber", icon: <MdPlumbing /> },
     { trade: "Roofer", icon: <MdRoofing /> },

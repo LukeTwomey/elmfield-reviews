@@ -17,12 +17,14 @@ import {
 import { RiPaintBrushFill } from "react-icons/ri";
 import { RxScissors } from "react-icons/rx";
 import { LuHardHat } from "react-icons/lu";
+import { FaHouseFloodWater } from "react-icons/fa6";
 
 const TradeTiles = ({ onClick, selectedTrade }) => {
   const trades = [
     { trade: "Builder", icon: <LuHardHat /> },
     { trade: "Carpenter", icon: <GiHandSaw /> },
     { trade: "Chiropractor", icon: <GiSkeleton /> },
+    { trade: "Damp Survey", icon: <FaHouseFloodWater /> },
     { trade: "Electrician", icon: <MdOutlineElectricalServices /> },
     { trade: "Gardener", icon: <GiGardeningShears /> },
     { trade: "Hairdresser", icon: <RxScissors /> },

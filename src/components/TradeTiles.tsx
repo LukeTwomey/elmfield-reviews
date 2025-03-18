@@ -16,7 +16,7 @@ import {
 } from "react-icons/gi";
 import { RiPaintBrushFill } from "react-icons/ri";
 import { RxScissors } from "react-icons/rx";
-import { LuHardHat, LuMilk } from "react-icons/lu";
+import { LuHardHat, LuMilk, LuSofa } from "react-icons/lu";
 import { FaHouseFloodWater } from "react-icons/fa6";
 
 const TradeTiles = ({ onClick, selectedTrade }) => {
@@ -34,6 +34,7 @@ const TradeTiles = ({ onClick, selectedTrade }) => {
     { trade: "Painter", icon: <RiPaintBrushFill /> },
     { trade: "Plumber", icon: <MdPlumbing /> },
     { trade: "Roofer", icon: <MdRoofing /> },
+    { trade: "Upholsterer", icon: <LuSofa /> },
     { trade: "Window Fitters", icon: <MdOutlineWindow /> },
   ];
 
